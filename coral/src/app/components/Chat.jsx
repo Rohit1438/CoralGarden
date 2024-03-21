@@ -13,7 +13,7 @@ export const Chat = () => {
   console.log(toggle);
     return (
     <div className="z-50" >
-      <div  className="rounded-full text-3xl md:text-3xl z-50 transition-all duration-1000 text-white p-4 md:p-4 flex justify-center bg-purple-400 fixed  bottom-16  right-12">
+      <div  className="rounded-full text-3xl md:text-3xl z-50 transition-all duration-1000 text-white p-4 md:p-4 flex justify-center bg-rose-400 fixed  bottom-16  right-12">
         <button onClick={handelChange} className="transition-all duration-1000">
        {toggle?<RxCross2 className="transition-all duration-1000"/>:   <BsChatRightText className="transition-all duration-1000"/>}
         </button>
@@ -22,14 +22,17 @@ export const Chat = () => {
 
     {/* btn a  */}
     
-    {/* <div className={`rounded-full text-3xl md:text-3xl z-40  text-white p-2 flex justify-center p-4 md:p-4 bg-green-400 fixed right-12 ${
+    <div className={`rounded-full text-3xl md:text-3xl z-40  text-white p-2 flex justify-center p-4 md:p-4 bg-green-500 fixed right-12 ${
     !toggle ? 'bottom-16 transition-all duration-300' : 'bottom-56  rotate-180   transition-all duration-1000'
 }`}>
     <button >
-        <FaWhatsapp  className="rotate-180"/>
+      
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/+919933292792">   <FaWhatsapp  className="rotate-180"/>
+</a>
+
     </button>
-</div> */}
-<div className={`rounded-full text-3xl md:text-3xl z-40  text-white p-2 flex justify-center bg-green-400 p-4 md:p-4 fixed right-12 ${
+</div>
+<div className={`rounded-full text-3xl md:text-3xl z-40  text-white p-2 flex justify-center bg-green-500 p-4 md:p-4 fixed right-12 ${
     !toggle ? 'bottom-16 transition-all duration-300' : 'bottom-36  rotate-180   transition-all duration-700'
 }`}>
    <Link  href="tel:9434262594">

@@ -8,11 +8,14 @@ import { FaFacebook } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
 import { Chat } from "../components/Chat";
 import Slider from "../components/Slider"
+import { BsCheck2Circle } from "react-icons/bs";
+
 const page = () => {
   const dataList=["", "", "","","","","","","","",]
   return (
     <div className="bg-rose-50 ">
       <Navbar />
+      <Chat/>
       <div>
         <div>
           <div
@@ -64,28 +67,28 @@ const page = () => {
           className="text-white px-4 py-4 md:px-16 md:py-20 flex flex-col lg:grid "
           style={{ gridTemplateColumns: "60% 55%", gap: "20px" }}
         >
-          <div className="leading-10 text-xl">
-            <h3 className="text-center md:text-left text-3xl z-10">AMENITIES</h3>
-            <h4>
+    <div className="leading-10 text-xl">
+            <h3 className="text-3xl z-10  text-center md:text-left">AMENITIES</h3>
+            <h4 className="text-center md:text-left">
               We offer a variety of amenities to make your stay with us as
-              comfortable as possible. Cable is available in every room with the
-              option of pay-per-view movies.
+              comfortable as possible. Cable is available in every room with
+              the option of pay-per-view movies.
             </h4>
 
-            <div className="grid grid-cols-3 gap-4 text-sm mt-12 mb-12">
-              <div className="item">High-speed internet access</div>
-              <div className="item">LED TV</div>
-              <div className="item">Breakfast</div>
-              <div className="item">Attached Bath</div>
-              <div className="item">Hot & Cold water</div>
-              <div className="item">Air Conditioned</div>
-              <div className="item">Shampoo</div>
-              <div className="item">Soap</div>
-              <div className="item">Free Wi-Fi</div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm mt-12 mb-12">
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />High-speed internet </div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />LED TV</div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />Breakfast</div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />Attached Bath</div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />Hot & Cold water</div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />Air Conditioned</div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />Shampoo</div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />Soap</div>
+              <div class="item flex items-center gap-2 hover:transition-all hover:pl-6 hover:duration-1000 text-yellow-300 font-semibold"><BsCheck2Circle />Free Wi-Fi</div>
             </div>
 
             <h4 className="text-3xl z-10">100% SATISFACTION GUARANTEED</h4>
-            <h4 className="sm:text-md ">
+            <h4 className="">
               Whether this is your first visit, or you have been a guest many
               times, we want your experience to be excellent. Our staff is
               always available to help with any questions or concerns you may
@@ -104,14 +107,14 @@ const page = () => {
 
       <div
         style={{ width: "100%" }}
-        className="    text-purple-200 text-center  bg-[#4E1D6D] flex flex-col items-center py-24"
+        className="    text-purple-200 text-center font-bold  bg-[#4E1D6D] flex flex-col items-center py-24"
       >
         <Image
           src="https://coralgardenresort.in/wp-content/uploads/2024/01/coral-gardan-logo.png"
           width={250}
           height={350}
         />
-        <p style={{ width: "60%" }} className="text-normal  font-light">
+        <p style={{ width: "60%" }} className="text-normal  font-semibold">
           CORAL GARDEN RESORT Neil Kendra, Andaman and Nicobar Islands, India.
           For Bookings Contact Us - 03192 282705, 9434262594, 9933293666,
           9476026661
@@ -129,16 +132,14 @@ const page = () => {
         style={{ width: "100%" }}
         className=" text-purple-200 text-center  bg-[#4A276B] flex flex-col items-center py-8"
       >
-        <p style={{ width: "60%" }} className="text-xs leading-10">
+        <p style={{ width: "60%" }} className="text-xs font-semibold leading-10">
           © Copyright 2024 Coral Garden Resort.
         </p>
         <p className="text-xs">Designed by: OMM DIGITAL SOLUTION PVT. LTD</p>
       </div>
       <div>
 
-      <div>
-      <Slider/>
-      </div>
+
       
       </div>
       <Chat/>

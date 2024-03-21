@@ -6,16 +6,18 @@ import { Navbar } from "../components/Navbar";
 import Image from "next/image";
 import { FaFacebook } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
+import { Chat } from "../components/Chat";
 const page = () => {
   return (
     <div className="">
       <Navbar />
+      <Chat/>
       <div className="bg-rose-100 pb-20 mb-8">
         <div className="text-center pt-8 pb-12">
           <h2 className="text-purple-700 text-2xl font-semibold">
             ABOUT SCUBA DIVING
           </h2>
-          <p className="text-rose-500 text-center">
+          <p className="text-rose-500 text-center font-semibold">
             Where Nature Meets Paradise
           </p>
 
@@ -30,15 +32,15 @@ const page = () => {
               borderRadius: "15px",
               border: "5px solid white",
             }}
-            className=" w-[100%] md:w-[70%] relative "
+            className=" w-[100%] md:w-[50%] relative "
             data-carousel="static"
           >
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba08.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -46,8 +48,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba01.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -56,8 +58,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba02.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -65,8 +67,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba07.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -75,8 +77,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba03.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -84,8 +86,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba04.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -93,8 +95,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba05.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -102,8 +104,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba06.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -111,8 +113,8 @@ const page = () => {
               <div className="hidden duration-200 ease-linear" data-carousel-item>
                 <Image
                   src="https://coralgardenresort.in/wp-content/uploads/2024/01/scuba09.jpg"
-                  width={800}
-                  height={800}
+                  width={500}
+                  height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />

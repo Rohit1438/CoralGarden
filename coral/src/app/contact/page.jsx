@@ -10,10 +10,12 @@ import { FaFacebook } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
 import { Input } from "postcss";
 import { BsChatRightText } from "react-icons/bs";
+import { Chat } from "../components/Chat";
 const page = () => {
   return (
     <div className="">
       <Navbar />
+      <Chat/>
       <div className=" bg-[#F7D3E8] flex-col md:grid" style={{gridTemplateColumns:"40% 60%"}}>
 
  <div className=" " >
@@ -92,7 +94,7 @@ const page = () => {
       }}
     />
   </div>
-  <label className="font-bold text-black text-lg" style={{ marginBottom: "12px" }}>
+  <label className="font-bold text-black text-lg " style={{ marginBottom: "12px" }}>
     You may put in your query here:
   </label>
   <textarea

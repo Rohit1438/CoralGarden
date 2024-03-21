@@ -94,7 +94,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Call } from "../../../public/call";
+
 import { FaFacebook } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
 import { MdAddIcCall } from "react-icons/md";
@@ -121,8 +121,8 @@ export const Navbar = () => {
 
   
       
-<div >
-<div className="bg-[#481C6B] hidden fixed md:flex lg:flex  top-0 z-50 text-white text-xs font-bold w-full px-12 py-4 items-center justify-between align-center"><div>
+<div className="sticky top-0 z-50"  >
+<div className="bg-[#481C6B]  hidden  md:flex lg:flex   z-50 text-white text-xs font-bold w-full px-12 py-4 items-center justify-between align-center"><div>
             <Image
               height={200}
               width={150}
@@ -188,7 +188,7 @@ export const Navbar = () => {
           </Link>
           <div className="flex justify-center align-bottom">
             <div className="flex items-center text-yellow-200 hover:text-white">
-              <Link href="tel:9434262594" className="flex items-center">
+              <Link href="tel:+919434262594" className="flex items-center">
                 <MdAddIcCall className="mr-1" />
                 +91 9434262594
               </Link>
@@ -206,7 +206,7 @@ export const Navbar = () => {
           </Link>
         </div>
 
-<div className="flex md:hidden lg:hidden ">
+<div className="flex md:hidden sticky top-0 lg:hidden ">
 <SmallNavbar />
 </div>
 </div>

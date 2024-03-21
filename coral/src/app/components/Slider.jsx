@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./styles.css";
+import { FaStar } from "react-icons/fa";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -14,7 +15,7 @@ const responsive = {
     slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 767, min: 464 },
+    breakpoint: { max: 767, min: 150 },
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
@@ -44,27 +45,32 @@ const sliderImageUrl = [
 ];
 
 const cardReviews = [
-  { name: "John Doe", rating: 4, review: "Great product, highly recommended!" },
+  { name: "Pratik Kadam", rating: 5, review: "Coral Garden Resort is situated at 300m from Bharatpur Beach(closer to Jetty). The rooms were clean and pretty good. The staff is cooperative and they arranged a few things(out of their way) for us." },
   {
-    name: "Jane Smith",
+    name: "Shubham Singhal",
     rating: 5,
-    review: "Excellent service, will definitely buy again!",
+    review: "I booked my stay at coral garden resort for 2 days. The rooms were near and clean. But the hospitality of their staff is pathetic. We were out of our rooms at 8:00 am and also have checked out and were sitting on the chairs outside the room but their staff said that you cannot sit here. This was the terrible behaviour. Food was average. Location was good near to the beach and near to Neil island jetty.",
   },
   {
-    name: "Alice Johnson",
-    rating: 3,
-    review: "Average experience, could be better.",
-  },
-  {
-    name: "Bob Brown",
-    rating: 2,
-    review: "Disappointing quality, wouldn't recommend.",
-  },
-  {
-    name: "Emily Davis",
+    name: "Imtiyaz A Parvez",
     rating: 4.5,
-    review: "Almost perfect, just a few minor issues.",
+    review: "We stayed in this resort with family for 1 day on December 28. The resort is very well located with excellent interiors of the rooms. Buffet breakfast and restaurant food was very well prepared. The only issue is check-out time. They assume that every new guest will be checking in before 10 am and push the existing guests to check-out before 8 am. If someone has the ferry at 13:00 or 14:00 hrs it is harsh for them to wait 4-5 hrs sitting in reception or restaurant without AC.",
   },
+  {
+    name: "Manya Agrawal",
+    rating: 5,
+    review: "We stayed here for a day but the stay was awesome. It felt like a home away from home. Especially the food, it was just commendable. The staff was cooprrative too. Just the check out time is a little too early but overall it was a good experience.",
+  },
+  {
+    name: "Priyesh Singh",
+    rating: 4.5,
+    review: "Rooms are good, specious and well maintained.this property is very near to the jetty and within the market area.all the beaches are very close to this resort. the thing which I didn’t like is their strict checkout time of 8am, as 8am is very early.",
+  },
+  {
+    name: "Yamika Mehra",
+    rating: 5,
+    review:"I wanted to give yoga a shot and a google search suggested that Tapas Yoga is the closest option. I went in to the first class with no expectations but have found so much strength – both physical and mental"
+  }
 ];
 const Slider = () => {
   const totalReviews = cardReviews.length;  
@@ -77,9 +83,9 @@ const Slider = () => {
         draggable={true}
         showDots={true}
         infinite={true}
-        partialVisible={true}
+        partialVisible={false}
         dotListClass="custom-dot-list-style"
-        customTransition="transform 500ms ease-in-out"
+        customTransition="transform 1500ms ease-in-out"
     
       
         customTransitionEnd={({ currentSlide }) => {
@@ -92,7 +98,7 @@ const Slider = () => {
           const nextIndex = (index + 1) % totalReviews;
 
           return (
-            <div className="slider flex items-center flex-col p-8  " key={index}>
+            <div className="slider flex items-center flex-col p-1  " key={index}>
           {/* <div className="p-6 bg-[#4E1D6D]  blur rounded-lg h-[200px] text-white text-xl font-bold">
                 <h3 className="txt-center">{cardReviews[prevIndex].name}</h3>
                 <div className="rating txt-center">
@@ -100,11 +106,17 @@ const Slider = () => {
                 </div>
                 <p className="txt-center">{cardReviews[prevIndex].review}</p>
               </div> */}
-<div className="p-6 bg-[#4E1D6D] rounded-lg text-white text-xl h-[200px] w-[200px] font-bold" style={{ maxWidth: "200px" ,overflowX: "auto"}}>
-<div className="w-[50%] m-auto flex justify-center flex-col  w-[100px]">
+<div className="p-2 bg-[#cf5757] rounded-lg text-white  shadow-lg text-xl  h-[300px] w-[200px] md:w-[350px] font-bold" style={{overflowX: "auto"}}>
+<div className="w-[90%] m-auto flex justify-center flex-col  ">
+<h3 className="text-center text-yellow-200 text-xl font-semibold ">{review.name}</h3>
+<div className="flex items-center m-auto justify-center text-center" >
+<p className="text-center mt-2 text-sm text-gray-700  font-bold text-xl text-white  ">{review.rating} </p>
 
-  <p className="text-left mt-2 text-sm ">{review.review}</p>
-  <h3 className="text-center text-yellow-300 text-md">{review.name}</h3>
+<FaStar color="#FFBA00" />
+</div>
+  
+  <p className="text-center mt-2 text-sm text-gray-700 text-left text-white font-semibold ">{review.review}</p>
+ 
 </div>
 </div>
 

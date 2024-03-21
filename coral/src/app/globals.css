@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+/* .bgImage {
+  background-image: url("https://wallpapersmug.com/download/3840x2400/eb0ad3/lone-beach-evenging-nature.jpg");
+  height: 100%;
+  padding-bottom:20px;
+  width: 100vw;
+
+  z-index: 0;
+    background-repeat: no-repeat;
+  background-size:cover;
+ 
+
+} */
+
 .bgImageA {
   background-image: url("https://coralgardenresort.in/wp-content/uploads/2024/01/service-bg2.jpg");
   height: 100%;
@@ -114,9 +129,6 @@ padding-bottom: 50px;
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  background: #000;
-}
 
 .slider {
   margin:0 20px;
@@ -135,10 +147,11 @@ padding: 0rem 0 2rem 0;
 
 .custom-dot-list-style button{
 border: none;
-background: rgb(255, 68, 68);
+outline: none;
+background: rgb(255, 252, 252);
 }
 .react-multi-carousel-dot.react-multi-carousel-dot--active button{
-background: rgb(255, 68, 68) !important;
+background: rgb(238, 155, 255) !important;
 }
 
 
@@ -180,3 +193,160 @@ background: rgb(255, 68, 68) !important;
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1.4rem;
+	background: whitesmoke;
+	margin: 0;
+	/* padding: 1rem; */
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+
+ul {
+	list-style-position: inside;
+	width: 100%;
+	max-width: 100%;
+	background: white;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+	padding: 0;
+	margin: 0;
+	border-radius: 0.1rem;
+}
+
+li {
+	padding: 0 0 0 1rem;
+}
+
+li:not(:last-child) {
+	border-bottom: 1px solid lightblue;
+}
+
+li:first-child {
+	margin-top: 1rem;
+}
+
+li:last-child {
+	margin-bottom: 1rem;
+}
+
+
+.olcards,
+.olcards * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.olcards {
+  list-style: none;
+  counter-reset: cardCount;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  --cardsGap: 1rem;
+  gap: var(--cardsGap);
+  padding-bottom: var(--cardsGap);
+}
+
+.olcards li {
+  counter-increment: cardCount;
+  display: flex;
+  color: white;
+  --labelOffset: 1rem;
+  --arrowClipSize: 1.5rem;
+  margin-top: var(--labelOffset);
+}
+
+.olcards li::before {
+  content: counter(cardCount, decimal-leading-zero);
+  background: white;
+  color: var(--cardColor);
+  font-size: 2em;
+  font-weight: 700;
+  transform: translateY(calc(-1 * var(--labelOffset)));
+  margin-right: calc(-1 * var(--labelOffset));
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 0.5em;
+}
+
+.olcards li .content {
+  background-color: var(--cardColor);
+  --inlinePadding: 1em;
+  --boxPadding: 0.5em;
+  display: grid;
+  padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+    var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+  grid-template-areas:
+    "icon title"
+    "icon text";
+  gap: 0.25em 1em;
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--arrowClipSize)) 0,
+    100% 50%,
+    calc(100% - var(--arrowClipSize)) 100%,
+    calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+    0 calc(100% + var(--cardsGap))
+  );
+  position: relative;
+}
+
+.olcards li .content::before {
+  content: "";
+  position: absolute;
+  width: var(--labelOffset);
+  height: var(--labelOffset);
+  background: var(--cardColor);
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  filter: brightness(0.75);
+}
+
+.olcards li .content::after {
+  content: "";
+  position: absolute;
+  height: var(--cardsGap);
+  width: var(--cardsGap);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.25), transparent 50%);
+  left: 0;
+  top: 100%;
+}
+
+.olcards li .icon {
+  grid-area: icon;
+  align-self: center;
+  
+}
+.activity-card {
+  background-image: url('https://www.andamanocean.in/wp-content/uploads/2023/07/sea-walker.jpg'); /* Replace './background.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.cardbga{
+  background-image:url('../app/img/beach/fetchpik.com-shutter-ojdtpcuy0p_720.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cardbgb{
+  background-image:url('../app/img/beach/fetchpik.com-shutter-s2xciln5nu_720.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-blur-md {
+  backdrop-filter: blur(2px);
+}

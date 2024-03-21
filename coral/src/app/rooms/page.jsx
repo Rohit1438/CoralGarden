@@ -6,7 +6,7 @@ import { CallSharp } from "@mui/icons-material";
 import { FaFacebook } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
 import { BsChatRightText } from "react-icons/bs";
-import {Chat} from "../components/Chat"
+import { Chat } from "../components/Chat";
  const page = () => {
     const products=[
         {
@@ -37,7 +37,7 @@ import {Chat} from "../components/Chat"
   return (
     <div>
 <Navbar/>
-
+<Chat/>
 <div className='bg-rose-100 pb-20 mb-8' >
 <div className='text-center pt-8 pb-12'>
 <h2 className='text-purple-700 text-2xl font-semibold'>ROOM TARIFF</h2>

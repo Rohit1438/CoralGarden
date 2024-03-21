@@ -18,7 +18,7 @@ import {
 import { CiMenuBurger } from "react-icons/ci";
 import Link from "next/link";
 
-import { Call } from "../../../public/call";
+
 import { FaFacebook } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
 import { MdAddIcCall } from "react-icons/md";
@@ -41,11 +41,11 @@ const SmallNavbar = () => {
           src="https://coralgardenresort.in/wp-content/uploads/2024/01/coral-gardan-logo.png"
         />
       </div>
-      <Button colorScheme="gray" onClick={onOpen}>
+      <Button colorScheme="gray"  onClick={onOpen}>
         {!isOpen ? (
-          <GiHamburgerMenu color="purple" className="text-purple-500" />
+          <GiHamburgerMenu color="purple" className="text-purple-700" />
         ) : (
-          <IoCloseSharp color="purple" className="text-purple-500" />
+          <IoCloseSharp color="white" className="text-white" />
         )}
       </Button>
 
@@ -59,7 +59,7 @@ const SmallNavbar = () => {
               style={{ width: "100%" }}
             >
               <Button colorScheme="gray" onClick={onClose}>
-                <IoCloseSharp className="text-purple-500" color="purple" />
+                <IoCloseSharp className="text-white" color="purple" />
               </Button>
             </div>
             <div className="flex flex-col items-start gap-4">
@@ -151,10 +151,10 @@ const SmallNavbar = () => {
                 style={{ width: "100%" }}
               >
                 <div className="flex items-center text-yellow-200 hover:text-white  px-2 py-2 rounded-lg">
-                  <Link href="tel:1234567890" className="flex items-center ">
+                  <Link href="tel:+919434262594" className="flex items-center ">
                     <MdAddIcCall className="mr-1" />
                     <p>
-                      1234567890
+                    +91 9434262594
                     </p>
                   </Link>
                 </div>
