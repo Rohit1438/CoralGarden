@@ -52,7 +52,7 @@ const page =() => {
                   width={500}
                   height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
+                  alt="img"
                 />
               </div>
               <div
@@ -64,7 +64,7 @@ const page =() => {
                   width={500}
                   height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
+                  alt="img"
                 />
               </div>
 
@@ -77,7 +77,7 @@ const page =() => {
                   width={500}
                   height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
+                  alt="img"
                 />
               </div>
               <div
@@ -89,7 +89,7 @@ const page =() => {
                   width={500}
                   height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
+                  alt="img"
                 />
               </div>
 
@@ -102,7 +102,7 @@ const page =() => {
                   width={500}
                   height={500}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..."
+                  alt="img"
                 />
               </div>
             </div>
@@ -504,7 +504,7 @@ const page =() => {
               <div className="content flex">
                 <div className="icon">🐠</div>
                 <div className="title text-md md:text:lg">The Wall</div>
-                <div className="text text-sm md:tex-md">
+                <div className="text text-sm md:tex-md text-gr">
                   Renowned for its huge vertical drop, the wall is quite
                   intriguing for tourists which makes it exciting for divers.
                   Vibrant coral formations with an abundance of marine life such

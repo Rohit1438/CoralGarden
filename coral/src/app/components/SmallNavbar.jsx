@@ -130,10 +130,10 @@ const SmallNavbar = () => {
                       SCUBA DIVING
                     </Link>
                     <Link
-                      href="/coming_soon"
+                      href="/snorkeling"
                       className="text-yellow-200 p-4 hover:text-white"
                     >
-                      COMING SOON
+                      SNORKELING
                     </Link>
                   </div>
                 </Link>

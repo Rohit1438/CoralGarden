@@ -168,8 +168,8 @@ export const Navbar = () => {
 <Link href="/scuba_diving" className="text-yellow-200 hover:text-white">
             SCUBA DIVING
           </Link>
-          <Link href="/coming_soon" className="text-yellow-200 p-4 hover:text-white">
-           COMING SOON
+          <Link href="/snorkeling" className="text-yellow-200 p-4 hover:text-white">
+          SNORKELING
           </Link>
 </div>
 

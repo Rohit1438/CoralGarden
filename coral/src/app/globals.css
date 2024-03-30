@@ -38,9 +38,9 @@
 
 /* [3] Finally, transforming the image when container gets hovered */
 .animate-zoom-in {
-  /* animation-name: zoomAnimation;
+  animation-name: zoomAnimation;
   animation-duration: 10s; 
-  animation-timing-function: ease-in-out; */
+  animation-timing-function: ease-in-out;
 }
 .tr-0{
   transform: scale(1);
@@ -141,9 +141,9 @@ padding-bottom: 50px;
   border-radius:10px;
 }
 
-.react-multi-carousel-list {
+/* .react-multi-carousel-list {
 padding: 0rem 0 2rem 0;
-}
+} */
 
 .custom-dot-list-style button{
 border: none;

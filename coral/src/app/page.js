@@ -52,8 +52,8 @@ export default function Home() {
         setCurrentImageIndex((prevIndex) =>
           prevIndex === bannerImages.length - 1 ? 0 : prevIndex + 1
         );
-        setTransitioning(false);
-      }, 500);
+        setTransitioning((pre)=>!pre);
+      }, 200);
     }, 5000);
 
     return () => {
@@ -94,9 +94,10 @@ useEffect(()=>{
     alt={`Banner Image ${currentImageIndex + 1}`}
     
  
-    className={`transition-opacity absolute bg-purple-100  top-[10vh] md:top-[-10vh] object-scale-down md:object-cover duration-300 z-20 ${
-      transitioning ? "opacity-100 animate-zoom-in" : "opacity-100 "
+    className={`transition-opacity absolute bg-purple-100  top-[10vh] md:top-[-10vh] object-scale-down md:object-cover w-[100%]  border-3 duration-300 z-20 ${
+      transitioning ? "opacity-0  " : "opacity-100"
     } animate-zoom-in`}
+    style={transitioning?{transform:"scale(1.3)",duration:"5000"}:""}
   />
 
         <div data-aos="fade-down" data-aos-duration="4000" className="absolute fade-in-text flex-col  text-purple-800 z-20  font-white inset-0 flex items-center justify-center top-[10vh] md:top-[50vh] ">
